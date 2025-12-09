@@ -49,6 +49,8 @@ La librería sqlite3 viene incluida por defecto en Python.
 
 Para lanzar el servidor en modo desarrollo (con recarga automática y depuración de errores), usa el siguiente comando en tu terminal:
 
+python manage.py   # Creamos la BD con SQLite
+
 flask --app app.py --debug run
 
 --app app.py: Indica que el archivo principal es app.py.
