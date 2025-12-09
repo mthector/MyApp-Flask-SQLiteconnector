@@ -50,13 +50,14 @@ La librería sqlite3 viene incluida por defecto en Python.
 Para lanzar el servidor en modo desarrollo (con recarga automática y depuración de errores), usa el siguiente comando en tu terminal:
 
 flask --app app.py --debug run
+
 --app app.py: Indica que el archivo principal es app.py.
 
 --debug: Activa el modo debug (reinicia el servidor al guardar cambios).
 
 run: Inicia el servidor.
 
-Una vez ejecutado, abre tu navegador en: 👉 https://www.google.com/search?q=http://127.0.0.1:5000
+Una vez ejecutado, abre tu navegador en: 👉 http://127.0.0.1:5000
 
 ### 📂 Estructura del Proyecto
 
@@ -68,6 +69,7 @@ Una vez ejecutado, abre tu navegador en: 👉 https://www.google.com/search?q=ht
 └── README.md            # Instrucciones del proyecto
 
 ### 🆘 Solución de Problemas
+
 Error: "flask" no se reconoce como un comando interno o externo.
 
 Solución: Asegúrate de haber activado el entorno virtual (venv) antes de ejecutar el comando.
