@@ -1,0 +1,164 @@
+/* 
+ * Gear4Music - Custom Styles
+ * Estilos minimalistas personalizados para la aplicación
+ */
+
+/* =============================================================================
+   BASE STYLES
+   ============================================================================= */
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #fafafa;
+}
+
+/* =============================================================================
+   NAVBAR
+   ============================================================================= */
+
+.navbar {
+    background-color: #fff !important;
+    border-bottom: 1px solid #eee;
+    padding: 0.5rem 1rem;
+    z-index: 1050 !important;
+}
+
+.navbar-brand img {
+    max-height: 80px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #333 !important;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #f0ad4e !important;
+}
+
+/* =============================================================================
+   BUTTONS
+   ============================================================================= */
+
+.btn {
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: #333;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #555;
+}
+
+.btn-warning {
+    background-color: #f0ad4e;
+    color: #333;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-info {
+    background-color: #6c757d;
+}
+
+.btn-secondary {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+    background-color: #e9ecef;
+}
+
+.rounded-pill {
+    border-radius: 4px !important;
+}
+
+/* =============================================================================
+   CARDS
+   ============================================================================= */
+
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    font-weight: 600;
+}
+
+.card-img-top {
+    border-radius: 8px 8px 0 0;
+}
+
+/* =============================================================================
+   TYPOGRAPHY
+   ============================================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: #333;
+}
+
+.text-warning {
+    color: #f0ad4e !important;
+}
+
+.display-3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* =============================================================================
+   COMPONENTS
+   ============================================================================= */
+
+.badge {
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.alert {
+    border: none;
+    border-radius: 4px;
+}
+
+.shadow-lg {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* =============================================================================
+   LAYOUT
+   ============================================================================= */
+
+footer {
+    background-color: #333 !important;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}

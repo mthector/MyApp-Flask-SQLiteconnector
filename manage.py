@@ -2,12 +2,14 @@ from flask import Flask # type: ignore
 from app import app, db
 from databases.db import *
 import config as custom_config
+from flask_bcrypt import Bcrypt
 
 app = Flask(__name__)
 app.config.from_object(custom_config)
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
 app.config['DEBUG'] = True
+bcrypt = Bcrypt(app)
 
 def create_tables():
     "Create relational database tables"
@@ -46,6 +48,14 @@ def add_data_tables():
         db.session.add_all(suppliers)
         db.session.commit()
 
+        # Create admin user
+        admin_user = User(
+            name='admin',
+            password=bcrypt.generate_password_hash('admin123').decode('utf-8'),
+            role='admin'
+        )
+        db.session.add(admin_user)
+        db.session.commit()
         i1 = Instrument(name = "Trumpet", image="https://www.sanganxa.com/525-medium_default/trompeta-bach-180ml-37-25-plateada-sib.jpg", image_2="https://www.sanganxa.com/42919-large_default/trompeta-bach-180ml-37-25-plateada-sib.jpg")
         i1.category_id = categories[1].id
         i1.supplier_id = suppliers[2].id

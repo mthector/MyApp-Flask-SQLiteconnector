@@ -1,0 +1,17 @@
+bcrypt
+blinker
+click
+colorama
+Flask
+Flask-Bcrypt
+Flask-Login
+Flask-SQLAlchemy
+greenlet
+itsdangerous
+Jinja2
+MarkupSafe
+pip
+SQLAlchemy
+typing_extensions
+Werkzeug
+WTForms
