@@ -22,6 +22,7 @@ python -m venv venv
 venv\Scripts\activate
 
 **En macOS / Linux:**
+
 python3 -m venv venv 
 source venv/bin/activate
 
@@ -31,12 +32,11 @@ Nota: Sabrás que el entorno está activo porque verás (venv) al principio de t
 ### 2. Instalar Dependencias
 Una vez activado el entorno, instala las librerías necesarias (Flask, etc.):
 
-Bash
-
 pip install -r requirements.txt
 
 
 ### 🗄️ Base de Datos (SQLite)
+
 Este proyecto utiliza SQLite.
 
 No necesitas instalar ningún servidor de base de datos extra.
@@ -46,9 +46,8 @@ El archivo de la base de datos (normalmente .db o .sqlite) se generará automát
 La librería sqlite3 viene incluida por defecto en Python.
 
 ### ▶️ Cómo Ejecutar el Proyecto
-Para lanzar el servidor en modo desarrollo (con recarga automática y depuración de errores), usa el siguiente comando en tu terminal:
 
-Bash
+Para lanzar el servidor en modo desarrollo (con recarga automática y depuración de errores), usa el siguiente comando en tu terminal:
 
 flask --app app.py --debug run
 --app app.py: Indica que el archivo principal es app.py.
