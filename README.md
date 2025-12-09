@@ -115,3 +115,15 @@ Error: "flask no se reconoce como un comando": Asegúrate de haber activado el e
 Error de conexión a la base de datos: Verifica que el archivo .db tenga permisos de escritura o que la ruta sea correcta.
 
 ¡Disfruta programando! Hecho con ❤️ y Python.
+
+---
+
+### Lo que necesitas para que este README funcione al 100%:
+
+1.  **El archivo `requirements.txt`**: Crea un archivo con ese nombre y pon dentro al menos esto:
+    ```text
+    Flask
+    ```
+    *(Nota: `sqlite3` no se pone aquí porque ya viene instalado dentro de Python por defecto).*
+
+2.  **El nombre del archivo**: En la sección "Ejecutar el proyecto", he puesto `app.py`. Si tu archivo se llama diferente (ej. `main.py`), edita esa línea en el README antes de subirlo.
