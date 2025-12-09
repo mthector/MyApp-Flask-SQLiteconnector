@@ -59,16 +59,9 @@ run: Inicia el servidor.
 
 Una vez ejecutado, abre tu navegador en: 👉 http://127.0.0.1:5000
 
-### 📂 Estructura del Proyecto
+---
 
-.
-├── venv/                # Entorno virtual (no subir a GitHub)
-├── app.py               # Código principal de la aplicación
-├── requirements.txt     # Lista de dependencias
-├── database.db          # Archivo de base de datos (puede variar el nombre)
-└── README.md            # Instrucciones del proyecto
-
-### 🆘 Solución de Problemas
+## 🆘 Solución de Problemas
 
 Error: "flask" no se reconoce como un comando interno o externo.
 
